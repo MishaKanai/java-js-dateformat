@@ -1,0 +1,16 @@
+{
+  "name": "java-js-dateformat",
+  "version": "0.0.2",
+  "description": "",
+  "main": "js/target/scala-2.13/javajsdateformat-opt.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MishaKanai/java-js-dateformat.git"
+  },
+  "author": "Misha Kanai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MishaKanai/java-js-dateformat/issues"
+  },
+  "homepage": "https://github.com/MishaKanai/java-js-dateformat#readme"
+}
