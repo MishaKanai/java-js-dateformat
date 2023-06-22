@@ -1,6 +1,6 @@
 {
   "name": "java-js-dateformat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "js/target/scala-2.13/javajsdateformat-opt.js",
   "repository": {
