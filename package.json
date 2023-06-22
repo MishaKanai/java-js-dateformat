@@ -1,8 +1,8 @@
 {
   "name": "java-js-dateformat",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
-  "main": "js/target/scala-2.13/javajsdateformat-opt.js",
+  "main": "js/target/scala-2.13/javajsdateformat-opt/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MishaKanai/java-js-dateformat.git"
