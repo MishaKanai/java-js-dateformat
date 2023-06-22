@@ -1,0 +1,12 @@
+target/
+js/target/
+jvm/target/
+shared/target/
+.cache
+.classpath
+.project
+.settings/
+.metals
+.bloop
+.vscode
+.bsp
