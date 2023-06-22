@@ -2,6 +2,8 @@
 // import locales._
 ThisBuild / scalaVersion := "2.13.10"
 
+enablePlugins(ScalaJSPlugin)
+
 lazy val root = project.in(file(".")).
   aggregate(javajsdateformat.js, javajsdateformat.jvm).
   settings(
@@ -20,7 +22,6 @@ lazy val javajsdateformat = crossProject(JSPlatform, JVMPlatform).in(file(".")).
     libraryDependencies += "io.github.cquiroz" %%% "scala-java-time" % "2.5.0",
     libraryDependencies += "io.github.cquiroz" %%% "scala-java-time-tzdb" % "2.5.0",
     testFrameworks += new TestFramework("utest.runner.Framework")
-
   ).
   jvmSettings(
     // Add JVM-specific settings here
@@ -29,7 +30,8 @@ lazy val javajsdateformat = crossProject(JSPlatform, JVMPlatform).in(file(".")).
   jsSettings(
     // Add JS-specific settings here
     libraryDependencies += "io.github.cquiroz" %%% "scala-java-locales" % "1.5.1",
-    libraryDependencies += "io.github.cquiroz" %%% "locales-full-db" % "1.5.1"
+    libraryDependencies += "io.github.cquiroz" %%% "locales-full-db" % "1.5.1",
+    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) }
     // uncomment for sbt-locales
     // localesFilter := LocalesFilter.Selection("en", "en-US", "es", "es-US")
   )

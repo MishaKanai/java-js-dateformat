@@ -65,5 +65,21 @@ object FormattersTest extends TestSuite {
       );
       assert(result == "February")
     }
+    test("formatLocalDate - MMMM es") {
+      val result = Formatters.formatLocalDate(
+        1992, 2, 9,
+        "MMMM",
+        "es"
+      );
+      assert(result == "febrero")
+    }
+    test("formatInstant - MMMM es") {
+      val result = Formatters.formatInstant(
+        697615200000L,
+        "MMMM",
+        "es"
+      );
+      assert(result == "febrero")
+    }
   }
 }
