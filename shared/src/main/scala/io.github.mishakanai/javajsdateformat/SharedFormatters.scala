@@ -1,4 +1,4 @@
-package mishakanai.javajsdateformat
+package `io.github.mishakanai`.javajsdateformat
 import java.time.format.DateTimeFormatter
 import java.time.LocalDateTime;
 import java.time.LocalDate;

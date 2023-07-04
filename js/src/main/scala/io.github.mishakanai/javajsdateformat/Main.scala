@@ -1,8 +1,8 @@
-package mishakanai.javajsdateformat
+package `io.github.mishakanai`.javajsdateformat
 import scala.scalajs.js.annotation.JSExportAll
 import scala.scalajs.js.annotation.JSExportTopLevel
 import java.time.ZoneId
-import mishakanai.javajsdateformat
+import `io.github.mishakanai`.javajsdateformat
 
 /**
   * I would like to do something like "object Formatters extends SharedFormatters", however, I can't get it to export.

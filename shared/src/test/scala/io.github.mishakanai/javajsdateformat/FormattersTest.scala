@@ -1,4 +1,4 @@
-package mishakanai.javajsdateformat
+package `io.github.mishakanai`.javajsdateformat
 import utest._
 
 object FormattersTest extends TestSuite {
