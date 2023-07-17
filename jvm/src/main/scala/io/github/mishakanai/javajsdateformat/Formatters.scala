@@ -1,4 +1,4 @@
-package `io.github.mishakanai`.javajsdateformat
+package io.github.mishakanai.javajsdateformat
 
 object Formatters extends SharedFormatters {
   
