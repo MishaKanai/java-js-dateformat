@@ -21,11 +21,12 @@ trait SharedFormatters {
         return date.format(formatter);
     }
     def formatInstant(
-        epochMs: Long,
+        epochMsString: String,
         pattern: String,
         localeStr: String = "en-US",
         zone: String = ZoneId.systemDefault().getId()
     ): String = {
+        val epochMs = epochMsString.toLong;
         val locale = Locale.forLanguageTag(localeStr);
         val formatter = DateTimeFormatter.ofPattern(pattern).withZone(ZoneId.of(zone)).withLocale(locale);
         val instant = Instant.ofEpochMilli(epochMs);

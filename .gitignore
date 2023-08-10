@@ -1,5 +1,4 @@
 target/
-js/target/
 jvm/target/
 shared/target/
 .cache

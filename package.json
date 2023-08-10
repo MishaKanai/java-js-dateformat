@@ -1,6 +1,6 @@
 {
   "name": "java-js-dateformat",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "",
   "main": "js/target/javajsdateformat-opt/main.js",
   "types": "main.d.ts",

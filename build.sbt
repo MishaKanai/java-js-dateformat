@@ -21,7 +21,7 @@ lazy val javajsdateformat = crossProject(JSPlatform, JVMPlatform).in(file(".")).
   enablePlugins(LocalesPlugin).
   settings(
     name := "javajsdateformat",
-    version := "0.2",
+    version := "0.3",
 
     // groupId, SCM, license information
     organization := "io.github.mishakanai",

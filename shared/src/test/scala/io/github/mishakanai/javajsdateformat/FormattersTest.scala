@@ -13,7 +13,7 @@ object FormattersTest extends TestSuite {
     }
     test("formatInstant - default arguments") {
       val result = Formatters.formatInstant(
-        697654800000L, // US East, noon Feb 9 1992
+        "697654800000", // US East, noon Feb 9 1992
         "MM dd YYYY",
         // default to american english locale
         // default to system timezone
@@ -23,7 +23,7 @@ object FormattersTest extends TestSuite {
 
     test("formatInstant - default timezone") {
       val result = Formatters.formatInstant(
-        697654800000L, // US East, noon Feb 9 1992
+        "697654800000", // US East, noon Feb 9 1992
         "MM dd YYYY",
         // "en-US",
         // default to system timezone
@@ -33,7 +33,7 @@ object FormattersTest extends TestSuite {
 
     test("formatInstant - ") {
       val result = Formatters.formatInstant(
-        697615200000L, // US East, 01:00am Feb 9 1992
+        "697615200000", // US East, 01:00am Feb 9 1992
         "MM dd YYYY",
         "en-US",
         "Europe/Berlin"
@@ -42,7 +42,7 @@ object FormattersTest extends TestSuite {
     }
      test("basic test Instant") {
       val result = Formatters.formatInstant(
-        697615200000L, // US East, 01:00am Feb 9 1992
+        "697615200000", // US East, 01:00am Feb 9 1992
         "MM dd YYYY",
         "en-US",
         "Pacific/Apia"
@@ -51,7 +51,7 @@ object FormattersTest extends TestSuite {
     }
     test("formatInstant - MMMM") {
       val result = Formatters.formatInstant(
-        697654800000L, // US East, noon Feb 9 1992
+        "697654800000", // US East, noon Feb 9 1992
         "MMMM",
         "en-US"
         // default to system timezone
@@ -75,7 +75,7 @@ object FormattersTest extends TestSuite {
     }
     test("formatInstant - MMMM es") {
       val result = Formatters.formatInstant(
-        697615200000L,
+        "697615200000",
         "MMMM",
         "es"
       );

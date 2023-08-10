@@ -16,9 +16,9 @@ object Formatters extends SharedFormatters {
     ) = super.formatLocalDate(year, month, day, pattern, localeStr)
 
     override def formatInstant(
-        epochMs: Long,
+        epochMsString: String,
         pattern: String,
         localeStr: String = "en-US",
         zone: String = ZoneId.systemDefault().getId()
-    ) = super.formatInstant(epochMs, pattern, localeStr, zone)
+    ) = super.formatInstant(epochMsString, pattern, localeStr, zone)
 }
